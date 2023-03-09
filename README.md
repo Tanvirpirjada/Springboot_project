@@ -11,7 +11,7 @@
 # Controller
 * Request make from postman come to the cotroller class and based on request type and endpoints its call methods in controller
 
-#Service
+# Service
 * from Cotroller class service class methods are called . Service class is the vclass wehere we write the buisness logic.
 
 # Repository
