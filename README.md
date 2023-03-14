@@ -1,6 +1,6 @@
 # Springboot_project
 # Chat_Application
-* This is a Java And springboot based chat_Application project. which show us the chat netween two users.
+* This is a Java And springboot based chat_Application project. which show us the chat between two users.
 *In this project We design 3 Models
 1. User -> fro conversation we need user
 2.ChatHistory-> for storing chat between two user 
