@@ -36,7 +36,7 @@ PUT /updatestudent/{student_id}: updates an existing student by ID
 DELETE /deletestudent/{student_id}: deletes a student by ID
 
 * Laptop
-* 
+
 POST /savelaptop: creates a new laptop
 
 GET /getlaptop: retrieves a list of all laptops
@@ -46,7 +46,7 @@ PUT /updatelaptop/{laptop_id}: updates an existing laptop by ID
 DELETE /deletelaptop/{laptop_id}: deletes a laptop by ID
 
 * Courses
-* 
+
 POST /savecourse: creates a new course
 
 GET /getcourses: retrieves a list of all courses
@@ -56,7 +56,7 @@ PUT /updatecourse/{course_id}: updates an existing course by ID
 DELETE /deletecourse/{course_id}: deletes a course by ID
 
 * Book
-* 
+
 POST /savebook: creates a new book
 
 GET /getbooks: retrieves a list of all books
