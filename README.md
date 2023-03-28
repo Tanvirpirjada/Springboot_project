@@ -1,68 +1,54 @@
-# Springboot_project
+# Student Management System API
+This project is an API built using Spring Boot framework and Java programming language. The API provides CRUD (Create, Read, Update, Delete) operations for 5 models: Student, Laptop, Courses, Book, and Address. The focus of this project is on implementing different types of relationships, including OneToOne, ManyToMany, and ManyToOne, between these models.
 
-# Student_Management_System
+# Models
+* Student
+The student model contains information about the student, including their name, email, age, and address.
 
-In this project we build api.In  this projet there is 5 models(Student,laptop, courses, book,adress) .Here we mainly focus on n onetoone, ManytoMany , Manytoone relationship and we performe some operations like create,delete, save/post, updating etc. In this project we use join colomn Annotation which connect two tables based on foregn key which we dicide. and also we use embedded anotation for not making extra table for adress its join with student .
+* Laptop
+The laptop model contains information about the laptop, including its brand, model, and the student it belongs to. This model is related to the Student model through a OneToOne relationship.
 
-# framework and languges
-* Springboot framework is used
-* Java is Used for code
+* Courses
+The courses model contains information about the different courses that are available, including the course name, course code, and the students enrolled in the course. This model is related to the Student model through a ManyToMany relationship.
 
-# Data flows
+* Book
+The book model contains information about different books, including the book name, author, and the students who have borrowed the book. This model is related to the Student model through a ManyToOne relationship.
 
-* UI(postman or localhost 8080 made requests)
+* Address
+The address model contains information about the student's address, including their street, city, state, and zip code. This model is embedded in the Student model.
 
-# 1 Cotroller
-* Cotroller -> requestcome from ui and  execute mathod in cotroller based on end points. In controller various mathods are available Ex
+# Endpoints
+The following endpoints are available for each model:
 
-Studet-> create:http://localhost:8080/savestudent
+* Student
+POST /savestudent: creates a new student
+GET /getstudent: retrieves a list of all students
+PUT /updatestudent/{student_id}: updates an existing student by ID
+DELETE /deletestudent/{student_id}: deletes a student by ID
 
-         get:http://localhost:8080/getstudent
+* Laptop
+POST /savelaptop: creates a new laptop
+GET /getlaptop: retrieves a list of all laptops
+PUT /updatelaptop/{laptop_id}: updates an existing laptop by ID
+DELETE /deletelaptop/{laptop_id}: deletes a laptop by ID
 
-         Update:http://localhost:8080/updatestudent/1
+* Courses
+POST /savecourse: creates a new course
+GET /getcourses: retrieves a list of all courses
+PUT /updatecourse/{course_id}: updates an existing course by ID
+DELETE /deletecourse/{course_id}: deletes a course by ID
 
-         Delete; http://localhost:8080/deletestudent/{student id} 
-         (requestparam= student_id)
+* Book
+POST /savebook: creates a new book
+GET /getbooks: retrieves a list of all books
+PUT /updatebook/{book_id}: updates an existing book by ID
+DELETE /deletebook/{book_id}: deletes a book by ID
 
+# Architecture
+The API follows a three-layer architecture, including the controller layer, service layer, and repository layer. The controller layer handles incoming requests and executes the appropriate methods based on the endpoint. The service layer contains the main business logic for the API, while the repository layer is responsible for connecting to the database.
 
- Laptop-> create:http://localhost:8080/savelaptopt
+# Database
+This API uses MySQL as its database.
 
-         get:http://localhost:8080/getlaptop
-
-         Update:http://localhost:8080/updatelaptop/{laptop_id}
-
-         Delete; http://localhost:8080/deletelaptop (requestparam=laptop_id)
-
-book-> create:http://localhost:8080/savebook
-
-         get:http://localhost:8080/getbooks
-
-         Update:http://localhost:8080/updateBook/(requesparam=Book_id)
-
-
-         Delete;http://localhost:8080/deleteBook  
-
-Courses->create:http://localhost:8080/savecourse
-
-         get:http://localhost:8080/savecourse
-         
-         Update: http://localhost:8080/updatecourse/1
-         
-
-
-* form controller service methods are call where our main buisness logic is wriiten
-
-# 2 service
-
-* the methods are called and its get data from databse with help of repository layer
-
-# 3 Repository 
-repository layes is help to connect with database 
-
-# used databse
-->Mysql
-
-# data Structure
-->  ArrayList
-
-
+# Data Structure
+The data structure used for this project is ArrayList.
