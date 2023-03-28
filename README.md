@@ -1,8 +1,6 @@
 # Springboot_project
-# Weeklytest_26
-Weekly_test_api
 
-# Weekly_test_api
+# Student_Management_System
 
 In this project we build api.In  this projet there is 5 models(Student,laptop, courses, book,adress) .Here we mainly focus on n onetoone, ManytoMany , Manytoone relationship and we performe some operations like create,delete, save/post, updating etc. In this project we use join colomn Annotation which connect two tables based on foregn key which we dicide. and also we use embedded anotation for not making extra table for adress its join with student .
 
@@ -37,7 +35,6 @@ Studet-> create:http://localhost:8080/savestudent
 
 book-> create:http://localhost:8080/savebook
 
-
          get:http://localhost:8080/getbooks
 
          Update:http://localhost:8080/updateBook/(requesparam=Book_id)
@@ -47,12 +44,9 @@ book-> create:http://localhost:8080/savebook
 
 Courses->create:http://localhost:8080/savecourse
 
-
          get:http://localhost:8080/savecourse
-
-
-
-         Update: http://localhost:8080/updatestudent/1
+         
+         Update: http://localhost:8080/updatecourse/1
          
 
 
