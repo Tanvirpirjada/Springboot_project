@@ -3,6 +3,7 @@ This project is an API built using Spring Boot framework and Java programming la
 
 # Models
 * Student
+
 The student model contains information about the student, including their name, email, age, and address.
 
 * Laptop
